@@ -1,6 +1,8 @@
 import NavBar from "./NavBar";
-
-
+import Herosection from "./Herosection";
+import InvestInYourCareer from "./InvestInYourCareer";
+import WhyLearnWithEdDigi from "./WhyLearnWithEdDigi";
+import Footer from "./Footer";
 
 
 export default function Home() {
@@ -8,12 +10,12 @@ export default function Home() {
     <div className="h-screen w-scren bg-gray-400">
       <NavBar/>
       <div>
-      <div>hero image </div>
-      <div>hero cta </div>
+      <div><Herosection/> </div>
+      <div><InvestInYourCareer/></div>
       </div>
 
       <div>
-        learn With Eddigi
+        <WhyLearnWithEdDigi/>
       </div>
 
       <div>
@@ -25,7 +27,7 @@ export default function Home() {
       </div>
 
       <div>
-        Footer
+       <Footer/>
       </div>
 
     </div>
