@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
+import Home from "./components/Home";
 
 const LaunchingSoon = () => {
   const calculateTimeLeft = useCallback(() => {
@@ -30,19 +31,9 @@ const LaunchingSoon = () => {
   }, [calculateTimeLeft]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-900 text-white text-center p-6">
-      <h1 className="text-5xl font-bold mb-4">Launching Soon 🚀</h1>
-      <p className="text-lg mb-6">We&apos;re working hard to bring something amazing for you.</p>
-      <div className="flex space-x-4 text-2xl font-semibold">
-        <div className="bg-gray-800 p-4 rounded-lg">{timeLeft.days}d</div>
-        <div className="bg-gray-800 p-4 rounded-lg">{timeLeft.hours}h</div>
-        <div className="bg-gray-800 p-4 rounded-lg">{timeLeft.minutes}m</div>
-        <div className="bg-gray-800 p-4 rounded-lg">{timeLeft.seconds}s</div>
-      </div>
-      <button className="mt-6 px-6 py-3 bg-blue-600 rounded-lg text-white font-bold hover:bg-blue-700 transition">
-        Notify Me
-      </button>
-    </div>
+  <>
+  <Home/>
+  </>
   );
 };
 
