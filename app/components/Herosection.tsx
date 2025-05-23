@@ -11,10 +11,10 @@ export default function Herosection() {
         className="w-full h-full object-cover" 
         priority 
       />
-      {/* <div className="absolute  top-24 right-24 p-8">
+      <div className="absolute  top-24 right-24 p-8">
         <h1 className="text-4xl font-sans mb-2">&ldquo;Empower Your Future</h1>
         <h2 className="pl-40 text-4xl font-sans">Learn, Gain, Succeed!&rdquo;</h2>
-      </div> */}
+      </div>
     </div>
   );
 }
