@@ -16,7 +16,7 @@ const NavBar = () => {
             <div className="flex left-6 items-center space-x-2 w-full h-16 relative">
               <div className="relative w-8 h-8">
                 <Image
-                  src="/globe.svg"
+                  src="/logo.png"
                   alt="eddigi_logo"
                   layout="fill"
                   objectFit="contain"
