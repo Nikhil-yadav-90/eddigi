@@ -13,8 +13,8 @@ const NavBar = () => {
 
         <div className="flex h-28 pt-2">
           <div className="flex-col relative  ">
-            <div className="flex left-6 items-center space-x-2 w-full h-16 relative">
-              <div className="relative w-8 h-8">
+            <div className="flex left-6 items-center pb-4 space-x-2 w-full h-16 relative">
+              <div className="relative w-10 h-10 ">
                 <Image
                   src="/logo.png"
                   alt="eddigi_logo"
