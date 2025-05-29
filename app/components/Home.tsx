@@ -1,17 +1,20 @@
 import Herosection from "./Herosection";
 import InvestInYourCareer from "./InvestInYourCareer";
 import WhyLearnWithEdDigi from "./WhyLearnWithEdDigi";
+import UnderConstruction from "./UnderConstruction"
 
 
 export default function Home() {
   return (
 <div>
 
-     <Herosection/> 
+     {/* <Herosection/> 
       <InvestInYourCareer/>
       
 
-        <WhyLearnWithEdDigi/>
+        <WhyLearnWithEdDigi/> */}
+
+        <UnderConstruction/>
    </div>
 
  
