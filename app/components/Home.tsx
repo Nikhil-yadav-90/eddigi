@@ -1,6 +1,6 @@
-import Herosection from "./Herosection";
-import InvestInYourCareer from "./InvestInYourCareer";
-import WhyLearnWithEdDigi from "./WhyLearnWithEdDigi";
+// import Herosection from "./Herosection";
+// import InvestInYourCareer from "./InvestInYourCareer";
+// import WhyLearnWithEdDigi from "./WhyLearnWithEdDigi";
 import UnderConstruction from "./UnderConstruction"
 
 
