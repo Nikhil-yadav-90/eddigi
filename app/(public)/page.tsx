@@ -1,11 +1,11 @@
+import Home from "@/components/Home";
 
-
-const Home= () => {
+const MainPage= () => {
   return (
     <>
-    I am Home Page
+    <Home/>
     </>
   );
 };
 
-export default Home;
+export default MainPage;

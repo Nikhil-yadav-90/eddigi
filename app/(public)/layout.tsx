@@ -1,13 +1,25 @@
 import type { ReactNode } from 'react';
+import '@/styles/global.css'
+import { Sora } from 'next/font/google';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'Eddigi',
   description: 'Change your Journey with us!',
 };
 
+
+const sora = Sora({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'], // choose what you need
+  display: 'swap',
+  variable: '--font-sora',
+});
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" >
+    <html lang="en" className={sora.variable}>
       <head>
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta
@@ -15,8 +27,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
       </head>
-      <body>
+      <body className="min-h-screen min-w-screen flex flex-col font-sans">
+
+        <main className='flex-1'>
+        <Header />
         {children}
+        </main>
+        <footer className='min-w-full'>
+        <Footer />
+        </footer>
       </body>
     </html>
   );
