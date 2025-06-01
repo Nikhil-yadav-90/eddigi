@@ -27,9 +27,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
       </head>
-      <body className="min-h-screen min-w-screen flex flex-col font-sans">
+      <body className="min-h-screen flex flex-col font-sans">
 
-        <main className='flex-1'>
+        <main className='flex-1  w-full overflow-x-hidden'>
         <Header />
         {children}
         </main>
