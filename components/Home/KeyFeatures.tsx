@@ -20,7 +20,7 @@ const KeyFeatures = () => {
       </div>
 
       {/* Feature Cards */}
-      <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-6 mt-10">
+      <div className="w-full flex flex-col sm:flex-row items-center justify-evenly gap-6 mt-10">
         {/* Feature 1 */}
         <div className="bg-transparent p-4 w-60 h-48 rounded-lg flex flex-col items-center justify-center shadow-md text-center">
           <div className="relative w-16 h-16 mb-2">
