@@ -12,12 +12,13 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      screens:{
-      sm: '0px', // Set `sm` to 0 so it's always active
+    screens: {
+      sm: '640px',
       md: '768px',
       lg: '1024px',
       xl: '1280px',
-      },
+      '2xl': '1536px',
+    },
       fontFamily:{
         sans: ['var(--font-sora)', 'sans-serif'],
       }

@@ -8,7 +8,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-background shadow-sm px-4 sm:px-6 md:px-10 py-3 md:py-6 w-full">
+    <nav className="bg-background shadow-sm px-4 sm:px-6 md:px-10 py-3 md:py-2 w-full">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between h-20 md:h-32">
         {/* Logo */}
         <div className="relative w-24 h-16 md:w-32 md:h-24 shrink-0">
