@@ -20,13 +20,13 @@ const HeroSection = () => {
 
       {/* Button Bottom-Right */}
       <div className="absolute bottom-4 right-4 sm:right-8 md:right-16 z-40 w-[90vw] sm:w-3/5 md:w-2/6 max-w-lg">
-        <div className="w-full font-medium text-black text-xs sm:text-sm mb-2">
+        <div className="w-full font-medium text-white sm:text-black text-xs sm:text-sm mb-2">
           <p>
             Join EdDigi and discover a world of knowledge with expert
             instructors and flexible learning options designed for you.
           </p>
         </div>
-        <button className="bg-transparent mt-3 font-bold text-black h-12 px-6 sm:px-10 hover:text-black cursor-pointer shadow-[0_8px_30px_rgba(0,0,0,0.6)] hover:ring-2 hover:ring-blue-400 transition rounded-lg w-full sm:w-auto text-sm">
+        <button className=" bg-white sm:bg-transparent mt-3 font-bold text-black h-12 px-6 sm:px-10 xl:text- hover:text-black cursor-pointer shadow-[0_8px_30px_rgba(0,0,0,0.6)] hover:ring-2 hover:ring-blue-400 transition rounded-lg w-full sm:w-auto text-sm">
           Join Now
         </button>
       </div>
@@ -36,7 +36,7 @@ const HeroSection = () => {
         src="/hero_image.png"
         alt="hero_image1"
         fill
-        style={{ objectFit: "cover" }}
+        className="object-cover object-center"
         priority
       />
     </section>
