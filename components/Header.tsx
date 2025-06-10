@@ -43,7 +43,7 @@ const Header = () => {
         <div className="hidden md:flex shrink-0 basis-[15%] justify-start text-center">
           <Link
             href="#"
-            className="h-12 px-8 flex items-center justify-center text-foreground rounded-lg text-sm font-medium hover:rounded-xl hover:ring-2 hover:ring-blue-400 shadow-md transition"
+            className="h-12 px-8 flex items-center bg-actionbutton justify-center text-foreground rounded-lg text-sm font-medium hover:rounded-xl hover:ring-2 hover:ring-blue-400 shadow-md transition"
           >
             Start Learning
           </Link>
@@ -129,7 +129,7 @@ const Header = () => {
               <Link href="#">
                 <span
                   onClick={() => setMenuOpen(false)}
-                  className="block mt-3 px-6 py-3 text-center bg-foreground text-white rounded-lg font-semibold hover:bg-blue-600 transition"
+                  className="block mt-3 px-6 py-3 text-center bg-actionbutton  text-foreground rounded-lg font-semibold hover:bg-blue-600 transition"
                 >
                   Start Learning
                 </span>
