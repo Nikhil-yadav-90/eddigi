@@ -62,7 +62,7 @@ const KeyFeatures = () => {
       </div>
 
       {/* Button */}
-      <button className="mt-10 text-white bg-blue-800 hover:bg-blue-700 transition py-2 px-6 rounded-lg">
+      <button className="mt-10 text-white bg-actionbutton hover:bg-blue-700 transition py-2 px-6 rounded-lg">
         Explore Features
       </button>
     </div>

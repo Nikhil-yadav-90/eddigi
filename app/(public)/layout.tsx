@@ -2,7 +2,6 @@ import type { ReactNode } from 'react';
 import '@/styles/global.css'
 import { Sora } from 'next/font/google';
 import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'Eddigi',
@@ -33,9 +32,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Header />
         {children}
         </main>
-        <footer className='min-w-full'>
-        <Footer />
-        </footer>
+
+  {/* <Footer /> */}
       </body>
     </html>
   );

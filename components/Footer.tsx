@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground w-full overflow-x-hidden text-black">
+    <footer className="bg-foreground w-full overflow-x-hidden text-black pt-20">
       <div className="max-w-screen-xl mx-auto px-6 py-16 flex flex-wrap justify-between items-start gap-8">
 
         {/* Brand */}
