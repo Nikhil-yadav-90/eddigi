@@ -3,12 +3,14 @@ import ContactInfo from "./ContactInfo";
 import HeroSection from "./HeroSection";
 import KeyFeatures from "./KeyFeatures";
 import LatestInsights from "./LatestInsights";
+import OurServices from "./OurServices";
 
 const Home = () => {
   return (
     <>
       <HeroSection />
       <KeyFeatures />
+      <OurServices/>
       <LatestInsights />
 
       {/* Overlapping Contact Info */}
