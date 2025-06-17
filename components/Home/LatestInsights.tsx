@@ -6,9 +6,9 @@ import {useState} from 'react'
 
 // Define the images for the carousel
 const images = [
-  { id: 1, src: '/scenic_view1.png', alt: 'Scenic View 1' },
-  { id: 2, src: '/scenic_view2.png', alt: 'Cityscape 2' },
-  { id: 3, src: '/scenic_view3.png', alt: 'Mountain Range 3' },
+  { id: 1, src: '/images/scenic_view1.png', alt: 'Scenic View 1' },
+  { id: 2, src: '/images/scenic_view2.png', alt: 'Cityscape 2' },
+  { id: 3, src: '/images/scenic_view3.png', alt: 'Mountain Range 3' },
 ];
 
 const LatestInsights = ()=>{
@@ -33,7 +33,7 @@ const LatestInsights = ()=>{
           EdDigi Blog on Youtube
         </h1>
         {/* Updated 'gap-4' to 'gap-6' for more space between images */}
-        <div className="flex w-full px-24 h-[400px] md:h-[300px] overflow-hidden rounded-b-xl gap-6 p-4">
+        <div className="flex w-full px-24 h-[400px]  overflow-hidden rounded-b-xl gap-6 p-4">
           {images.map((image) => (
             <div
               key={image.id}

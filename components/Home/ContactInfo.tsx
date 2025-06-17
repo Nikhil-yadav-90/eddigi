@@ -8,7 +8,7 @@ const ContactInfo = () => {
           Reach out to us for any inquiries or support. We’re here to help you on your learning journey.
         </p>
       </div>
-      <button className="bg-[#0C144C] text-white text-2xl font-semibold py-4 px-10 rounded-2xl hover:ring-black transition hover:text-actionbutton hover:bg-foreground shadow-md transition">
+      <button className="bg-[#0C144C] text-white text-2xl font-semibold py-4 px-10 rounded-2xl hover:ring-black transition hover:text-actionbutton hover:bg-foreground shadow-md">
         Join Us
       </button>
     </div>
