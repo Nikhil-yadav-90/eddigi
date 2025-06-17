@@ -14,7 +14,7 @@ const Header = () => {
         <div className="relative w-24 h-16 md:w-32 md:h-24 shrink-0">
           <Link href="/" className="block">
             <Image
-              src="/logo.svg"
+              src="/images/logo.svg"
               alt="logo_eddigi"
               fill
               style={{ objectFit: "contain" }}
@@ -26,7 +26,7 @@ const Header = () => {
         {/* Desktop Nav */}
         <ul className="hidden md:flex flex-1 justify-evenly space-x-8 text-base font-extrabold text-black">
           <li>
-            <Link href="/courses" className="hover:underline">
+            <Link href="#" className="hover:underline">
               Courses
             </Link>
           </li>

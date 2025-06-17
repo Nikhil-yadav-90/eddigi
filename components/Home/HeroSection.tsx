@@ -33,7 +33,7 @@ const HeroSection = () => {
 
       {/* Background Image */}
       <Image
-        src="/hero_image.png"
+        src="/images/hero_image.png"
         alt="hero_image1"
         fill
         className="object-cover object-center"

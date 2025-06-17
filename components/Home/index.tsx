@@ -1,5 +1,4 @@
-import Footer from "../Footer";
-import ContactInfo from "./ContactInfo";
+import CoursesHome from "./CoursesHome";
 import HeroSection from "./HeroSection";
 import KeyFeatures from "./KeyFeatures";
 import LatestInsights from "./LatestInsights";
@@ -10,17 +9,11 @@ const Home = () => {
     <>
       <HeroSection />
       <KeyFeatures />
-      <OurServices/>
-      <LatestInsights />
-
-      {/* Overlapping Contact Info */}
-      <div className="relative z-10 translate-y-14">
-
-        <div className="flex justify-center">
-          <ContactInfo />
-        </div>
+      <CoursesHome />
+      <div className="mt-[20%]">
+        <OurServices />
       </div>
-      <Footer />
+      <LatestInsights />
     </>
   );
 };
