@@ -17,7 +17,7 @@ const CoursesHome = () => {
         <div className="relative h-[45%] w-[30%]">
           <Image
             fill
-            src="/pencil1.png"
+            src="/images/pencil1.png"
             alt="pencil"
           />
         </div>
@@ -37,7 +37,7 @@ const CoursesHome = () => {
         <div className="relative h-[45%] w-[30%]">
           <Image
             fill
-            src="/education.png"
+            src="/images/education.png"
             alt="education"
           />
         </div>
@@ -57,7 +57,7 @@ const CoursesHome = () => {
         <div className="relative h-[45%] w-[30%]">
           <Image
             fill
-            src="/calendar_colour.png"
+            src="/images/calendar_colour.png"
             alt="calendar_colour"
           />
         </div>
@@ -77,7 +77,7 @@ const CoursesHome = () => {
         <div className="relative h-[45%] w-[30%]">
           <Image
             fill
-            src="/cup.png"
+            src="/images/cup.png"
             alt="cup"
           />
         </div>
