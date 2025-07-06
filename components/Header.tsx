@@ -1,11 +1,13 @@
 "use client";
 
+import { coursesList } from "@/mockData/courses";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [courseOpen, setCourseOpen] = useState(false);
 
   return (
     <nav className="bg-background shadow-sm px-4 sm:px-6 md:px-10 py-3 md:py-2 w-full">
@@ -25,11 +27,23 @@ const Header = () => {
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex flex-1 justify-evenly space-x-8 text-base font-extrabold text-black">
-          <li>
-            <Link href="#" className="hover:underline">
-              Courses
-            </Link>
+          <li className="relative" onClick={() => setCourseOpen(!courseOpen)}>
+            <span className="hover:underline cursor-pointer">Courses</span>
+            {courseOpen && (
+              <ul className="absolute left-0 mt-2 flex flex-col bg-white text-sm text-black shadow-lg p-3 rounded-md space-y-2 z-50 min-w-[300px]">
+                {coursesList?.map((item) => (
+                  <li onClick={()=>setCourseOpen(!courseOpen)} key={item.id}>
+                    <Link href={item.link} className="hover:underline block">
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+
           </li>
+
+
           <li>
             <Link href="/about-us" className="hover:underline">
               About
