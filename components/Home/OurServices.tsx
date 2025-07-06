@@ -17,7 +17,7 @@ const OurServices = () => {
                         <div className="absolute z-20 right-5 top-0 w-[60%] h-[70%]">
                             <Image
                                 alt="our_services"
-                                src="/images/our_services.png"
+                                src="/images/our_services.webp"
                                 fill
                                 className="object-contain"
                             />
@@ -25,7 +25,7 @@ const OurServices = () => {
                         <div className="absolute z-10 bottom-0 left-5 w-[65%] h-[40%]">
                             <Image
                                 alt="our_services_1"
-                                src="/images/our_services1.png"
+                                src="/images/our_services1.webp"
                                 fill
                                 className="object-contain"
                             />

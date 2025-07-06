@@ -9,7 +9,7 @@ const PopularCourses = () => {
                     <div className="w-[250px] h-[150px] md:w-[350px] md:h-[200px] relative z-20 md:left-16 md:top-5 mx-auto md:mx-0">
                         <Image
                             alt='our_course'
-                            src='/images/our_course.png'
+                            src='/images/our_course.webp'
                             fill
                         />
                     </div>
@@ -18,7 +18,7 @@ const PopularCourses = () => {
                     <div className="w-[250px] h-[350px] md:w-[300px] md:h-[450px] relative mx-auto md:mx-0">
                         <Image
                             alt='our_course1'
-                            src='/images/our_course1.png'
+                            src='/images/our_course1.webp'
                             fill
                         />
                     </div>
