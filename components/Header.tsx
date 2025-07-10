@@ -107,16 +107,21 @@ const Header = () => {
       {menuOpen && (
         <div className="md:hidden bg-background shadow-md px-4 py-6 relative z-50">
           <ul className="flex flex-col space-y-5 text-black font-semibold text-lg">
-            <li>
-              <Link href="/courses">
-                <span
-                  onClick={() => setMenuOpen(false)}
-                  className="block hover:underline"
-                >
-                  Courses
-                </span>
-              </Link>
-            </li>
+                      <li className="relative" onClick={() => setCourseOpen(!courseOpen)}>
+            <span className="hover:underline cursor-pointer">Courses</span>
+            {courseOpen && (
+              <ul className="absolute left-0 mt-2 flex flex-col bg-white text-sm text-black shadow-lg p-3 rounded-md space-y-2 z-50 min-w-[300px]">
+                {coursesList?.map((item) => (
+                  <li onClick={()=>setCourseOpen(!courseOpen)} key={item.id}>
+                    <Link href={item.link} className="hover:underline block">
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+
+          </li>
             <li>
               <Link href="/about-us">
                 <span

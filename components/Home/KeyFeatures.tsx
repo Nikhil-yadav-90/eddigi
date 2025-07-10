@@ -32,7 +32,7 @@ const KeyFeatures = () => {
                 alt="expert_instructor"
               />
           </div>
-          <h1 className="text-center text-base font-medium">Expert Instructors</h1>
+          <h1 className="text-center text-base text-black font-medium">Expert Instructors</h1>
         </div>
 
         {/* Feature 2 */}
@@ -45,7 +45,7 @@ const KeyFeatures = () => {
               alt="flexible_learning"
             />
           </div>
-          <h1 className="text-center text-base font-medium">Flexible Learning</h1>
+          <h1 className="text-center text-base text-black font-medium">Flexible Learning</h1>
         </div>
 
         {/* Feature 3 */}
@@ -58,7 +58,7 @@ const KeyFeatures = () => {
               alt="personalized_learning"
             />
           </div>
-          <h1 className="text-center text-base font-medium">Personalized Learning</h1>
+          <h1 className="text-center text-base text-black font-medium">Personalized Learning</h1>
         </div>
       </div>
 
