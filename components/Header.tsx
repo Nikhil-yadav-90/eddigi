@@ -56,7 +56,7 @@ const Header = () => {
         {/* Desktop Button */}
         <div className="hidden md:flex shrink-0 basis-[15%] justify-start text-center">
           <Link
-            href="#"
+            href="/contact-us"
             className="h-12 px-8 flex items-center bg-actionbutton justify-center text-foreground rounded-lg text-sm font-medium hover:rounded-xl hover:ring-2 hover:ring-blue-400 shadow-md transition"
           >
             Start Learning
@@ -145,7 +145,7 @@ const Header = () => {
               Blog
             </li>
             <li>
-              <Link href="#">
+              <Link href="/contact-us">
                 <span
                   onClick={() => setMenuOpen(false)}
                   className="block mt-3 px-6 py-3 text-center bg-actionbutton  text-foreground rounded-lg font-semibold hover:bg-blue-600 transition"

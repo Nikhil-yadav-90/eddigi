@@ -1,19 +1,19 @@
 export const coursesList = [
-  // {
-  // id:1,
-  // title: "Frontend Development",
-  // link: '/courses/frontend'
-  // },
-  // {
-  // id:2,
-  // title: "Backend Development",
-  // link: '/courses/backend'
-  // },
-  // {
-  // id:3,
-  // title: "Devops",
-  // link: '/courses/devops'
-  // },
+  {
+  id:1,
+  title: "Frontend Development",
+  link: '/courses/frontend'
+  },
+  {
+  id:2,
+  title: "Backend Development",
+  link: '/courses/backend'
+  },
+  {
+  id:3,
+  title: "Devops",
+  link: '/courses/devops'
+  },
   {
     id: 4,
     title: "AWS",
@@ -26,7 +26,7 @@ export const courseDetail = [
     courseName: "aws",
     details: {
       heroImage: {
-        enrollLink: "/",
+        enrollLink: "/contact-us",
         imageLink: "/images/aws_hero_image.png",
         altValue: "aws_course"
       },
