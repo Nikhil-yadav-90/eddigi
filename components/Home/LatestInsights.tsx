@@ -6,9 +6,10 @@ import {useState} from 'react'
 
 // Define the images for the carousel
 const images = [
-  { id: 1, src: '/images/scenic_view1.png', alt: 'Scenic View 1' },
-  { id: 2, src: '/images/scenic_view2.png', alt: 'Cityscape 2' },
-  { id: 3, src: '/images/scenic_view3.png', alt: 'Mountain Range 3' },
+  { id: 1, src: '/images/scenic_view1.png', alt: 'Scenic View 1', link:'https://www.youtube.com/watch?v=pwE6-TvZ12E&t=34s' },
+  { id: 2, src: '/images/scenic_view2.png', alt: 'Cityscape 2' , link:'https://www.youtube.com/watch?v=pwE6-TvZ12E&t=34s'},
+  { id: 3, src: '/images/scenic_view3.png', alt: 'Mountain Range 3' , link:'https://www.youtube.com/watch?v=pwE6-TvZ12E&t=34s'},
+
 ];
 
 const LatestInsights = ()=>{
@@ -33,6 +34,7 @@ const LatestInsights = ()=>{
           EdDigi Blog on Youtube
         </h1>
         {/* Updated 'gap-4' to 'gap-6' for more space between images */}
+       
         <div className="flex w-full px-24 h-[400px]  overflow-hidden rounded-b-xl gap-6 p-4">
           {images.map((image) => (
             <div
@@ -44,8 +46,12 @@ const LatestInsights = ()=>{
                           transition-all duration-500 ease-in-out
                           ${hoveredImageId === image.id ? 'w-[60%]' : 'w-[20%]'}
                           flex-shrink-0 rounded-lg`} // Added rounded-lg for individual image corners
-              onMouseEnter={() => handleMouseEnter(image.id)}
+              onMouseOver={() => handleMouseEnter(image.id)}
             >
+               <Link 
+              href={image.link}
+              target='blank'
+              >
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -53,18 +59,9 @@ const LatestInsights = ()=>{
                 className="w-full h-full object-cover rounded-lg"
                 priority
               />
+              </Link>
               {/* Image Overlay for text */}
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/70 to-transparent p-4 text-white
-                          transform translate-y-full opacity-0
-                          transition-all duration-300 ease-in-out
-                          group-hover:translate-y-0 group-hover:opacity-100
-                          peer-hover:translate-y-0 peer-hover:opacity-100
-                          flex flex-col justify-end">
-                <h3 className="text-xl font-semibold mb-1">{image.alt}</h3>
-                <p className="text-sm text-gray-200">
-                  A beautiful depiction of {image.alt.toLowerCase()}.
-                </p>
-              </div>
+              
             </div>
           ))}
         </div>
@@ -72,7 +69,8 @@ const LatestInsights = ()=>{
     </div>
          <div className="md:flex shrink-0 basis-[15%] justify-center items-center my-20 text-center">
           <Link
-            href="#"
+            href="https://youtube.com/@eddigi"
+            target='blank'
             className="h-12 px-8 flex items-center bg-actionbutton justify-center text-foreground rounded-lg text-sm font-medium hover:rounded-xl hover:ring-2 shadow-md transition"
           >
             Explore Videos

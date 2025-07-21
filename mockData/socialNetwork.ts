@@ -1,0 +1,22 @@
+export const socialNetwork = [
+    {
+        id:1,
+        title:'linkedin',
+        link:'https://www.facebook.com/share/19jgc7ktke/',
+    },
+    {
+        id:2,
+        title:'facebook',
+        link:'https://www.facebook.com/share/19jgc7ktke/',
+    },
+    {
+        id:3,
+        title:'instagram',
+        link:'https://www.instagram.com/eddigitech?igsh=ZXdoNjV5ZThpZjcy',
+    },
+    {
+        id:4,
+        title:'youtube',
+        link:'https://youtube.com/@eddigi',
+    },
+]

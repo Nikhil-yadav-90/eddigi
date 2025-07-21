@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -26,9 +27,12 @@ const HeroSection = () => {
             instructors and flexible learning options designed for you.
           </p>
         </div>
-        <button className=" bg-actionbutton sm:bg-actionbutton mt-3 font-bold text-foreground h-12 px-6 sm:px-10 xl:text- hover:text-actionbutton hover:bg-transparent cursor-pointer shadow-[0_8px_30px_rgba(0,0,0,0.6)] hover:ring-2 hover:ring-blue-400 transition rounded-lg w-full sm:w-[250px] text-sm">
+        <Link href='contact-us'>
+        <button className=" bg-actionbutton sm:bg-actionbutton mt-3 font-bold text-foreground h-12 px-6 sm:px-10 xl:text- hover:text-actionbutton hover:bg-transparent cursor-pointer shadow-[0_8px_30px_rgba(0,0,0,0.6)] hover:ring-2 hover:ring-blue-400 transition rounded-lg w-full sm:w-[250px] text-sm"
+        >
           Join Now
         </button>
+        </Link>
       </div>
 
       {/* Background Image */}
